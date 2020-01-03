@@ -9,7 +9,7 @@ js:jquery
 
 
 在线演示：
-http:www.orgloft.com/page/LuckyDraw/
+http://www.orgloft.com/page/luckyDraw.html
 
 我的个人网站
 http:www.orgloft.com
