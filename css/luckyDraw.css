@@ -22,7 +22,7 @@
 body {
 	background-attachment:fixed;
 	background-size:cover;
-	background-color: black;
+	background-color: orange!important;
 	background-image: url(../img/1.jpg);
 	color:rgb(91, 100, 230);
 	margin: 0px;
@@ -46,7 +46,7 @@ button{
 	font-family: 华文琥珀;
 	font-size: 50px;
 	margin-bottom: 50px;
-	color: #6C7B8B;
+	color: white;
 }
 .logo{
 	width: 50px;

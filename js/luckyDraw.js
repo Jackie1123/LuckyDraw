@@ -1,3 +1,10 @@
+//启动函数
+function onLoad() {
+	var innerHeight = window.innerHeight;
+	console.log(innerHeight);
+	document.getElementById("body").style.height = innerHeight + "px";
+}
+
 function testTime() {
 	var Array = []; //首先创建一个空数组，用来放随机数
 	var mini = document.getElementById("input1").value; //字符串类型的两兄弟
@@ -33,3 +40,32 @@ function setTime(mark) { //这个参数mark相当于是一个标记吧
 }
 
 function clearTime(timer) {}
+
+//鼠标点击特效
+var a_idx = 0;
+jQuery(document).ready(function($) {
+	$("body").click(function(e) {
+		var a = new Array("好运常在！", "Lucky！", "頑張って！", "행운을 빕니다！", "Bonne chance！");
+		var $i = $("<span></span>").text(a[a_idx]);
+		a_idx = (a_idx + 1) % a.length;
+		var x = e.pageX,
+			y = e.pageY;
+		$i.css({
+			"z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+			"top": y - 20,
+			"left": x,
+			"position": "absolute",
+			"font-weight": "bold",
+			"color": "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
+		});
+		$("body").append($i);
+		$i.animate({
+				"top": y - 180,
+				"opacity": 0
+			},
+			1500,
+			function() {
+				$i.remove();
+			});
+	});
+});
