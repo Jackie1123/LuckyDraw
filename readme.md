@@ -12,4 +12,4 @@ js:jquery
 http://www.orgloft.com/page/luckyDraw.html
 
 我的个人网站
-http:www.orgloft.com
+http://www.orgloft.com
